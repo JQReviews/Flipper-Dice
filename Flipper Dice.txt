@@ -1,0 +1,19 @@
+import random
+
+def roll_dice(num_dice, num_sides):
+  # create a list to store the results of each die roll
+  rolls = []
+  
+  # roll the dice num_dice times and store the result in rolls
+  for i in range(num_dice):
+    rolls.append(random.randint(1, num_sides))
+  
+  return rolls
+
+# roll two 4-sided dice, two 6-sided dice, two 8-sided dice,
+# two 10-sided dice, and two 20-sided dice
+print(roll_dice(2, 4))
+print(roll_dice(2, 6))
+print(roll_dice(2, 8))
+print(roll_dice(2, 10))
+print(roll_dice(2, 20))
